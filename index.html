@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <div class="NavBarAll">
+        <div class="topnav" id="myTopnav">
+          <a class="active"><img src="LogoAV.png" style="width: 15vh;"></a>
+            <a href="#Modelli">Modelli</a>
+            <a href="#Testimonianza">Testimonianza</a>
+            <a href="#Contatti">Contatti</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+        </div>
+      </div>
+      <script>
+          function toggleResponsiveMenu() {
+              var navbar = document.getElementById("myTopnav");
+              if (navbar.className === "topnav") {
+                  navbar.className += " responsive";
+              } else {
+                  navbar.className = "topnav";
+              }
+          }
+          
+          document.addEventListener("DOMContentLoaded", function () {
+              // Setup event listeners for menu items
+              const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+              menuItems.forEach(item => {
+                  item.addEventListener('click', function() {
+                      var navbar = document.getElementById("myTopnav");
+                      if (navbar.className.includes("responsive")) {
+                          navbar.className = "topnav";
+                      }
+                  });
+              });
+          });
+        </script>
+</head>
+<body style="margin: 0 auto;">
+<!--------------------------  Body ----------------------------------->
+<div class="bgposter">
+<div class="poster">
+    <h1 style="text-shadow: 1px 0 10px blue;">Una comunione così mai vista?</h1>
+    <img class="motivation-img" src="maxresdefault.jpg" src="daenerys with egg" />
+    <h3 style="text-shadow: 1px 0 10px blue;">Non perderti questa grande occasione per festeggiare bene</h3>
+</div>
+</div>
+
+<div class="who">
+    <h2 style="text-align: center;">...forse non conosci<br>         
+        <span style=" 
+          background: -webkit-linear-gradient(DeepPink, PaleVioletRed);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-style: italic;">la Fatina Palloncina
+        </span> !
+    </h2>
+
+    <div class="insidewho" style="width: 70%; margin-inline: auto; border:none; padding: 15px; border-radius: 30px; text-align: center;">
+        <div class="img" style="height: 200px; width: 200px; background-color: gray; margin-inline: auto;">IMG</div>
+        <h2 style="margin-top: 15px;">Benvenuti nel Nostro Sito</h2>
+        <p style="font-size: 16px; margin-top: 10px;">Siamo lieti di presentarvi la nostra nuova collezione di prodotti. Ogni pezzo è stato selezionato con cura per offrirvi la migliore qualità e stile.
+            Esplorate le nostre offerte e trovate ciò che fa per voi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil in neque qui voluptatem ipsum iusto, quia, soluta impedit dolor,
+            </p>
+        <a href="#" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: black; color: white; text-decoration: none; border-radius: 5px;">Scopri di più</a>
+    </div>
+    
+
+
+</div>
+
+
+ 
+<!------------------Inizio Footer------------------------->
+    <div class="footer">
+      <br><br>
+      <p>Copyright © 2023 AndVit | All Rights Reserved</p>
+      <br>
+    </div>
+<!------------------Fine Footer--------------------------->
+  
+<!--------------------------Fine Body ----------------------------------->
+</body>
+</html>
